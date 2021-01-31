@@ -1,0 +1,44 @@
+body{
+    background-color: #dff9fb;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body {
+    color: white;
+    /* transition: color .5s ease-in-out; */
+}
+
+.clicked {
+    color: plum;
+}
+
+.form,
+.greeting  {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadIn  .5s linear;
+}
